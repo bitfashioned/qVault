@@ -2,12 +2,12 @@
 
 ## 🧠 Project Abstract
 
-**Sleeve Vault** is a modular cryptographic vault designed to future-proof decentralized assets against quantum threats. Our protocol introduces a **dual-key system** combining traditional ECDSA with **hash-based, quantum-resistant fallback signatures** (WOTS+), ensuring long-term secure asset custody.
+**Sleeve Vault** is a modular cryptographic vault designed to future-proof decentralized assets against quantum threats. Our protocol introduces a **dual-key system** combining traditional ECDSA with **hash-based, quantum-resistant signatures** (WOTS+), ensuring long-term secure asset custody.
 
 Our mission is to solve one of Web3's most pressing but invisible risks: **the quantum vulnerability of existing wallets and signature schemes**. By introducing a post-quantum fallback mechanism, we provide protocols, DAOs, and asset custodians an opt-in pathway to mitigate the long-term risks of quantum computing without sacrificing near-term usability or composability.
 
 ### Problem Space
-- ECDSA is non-quantum secure (vulnerable to Shor's algorithm).
+- ECDSA is non-quantum secure (a quantum computer can break the Discrete Log Problem).
 - Existing wallets and vaults cannot easily upgrade to quantum-safe mechanisms.
 - DeFi protocols and treasuries risk **total compromise** when quantum computers become practical.
 
@@ -20,7 +20,7 @@ Our mission is to solve one of Web3's most pressing but invisible risks: **the q
 ### Team Background
 Our team consists of experts with backgrounds in:
 - Advanced cryptographic research including hash-based signature schemes and post-quantum cryptography.
-- Smart contract development across EVM chains and modular vault design.
+- Smart contract development across EVM chains and modular design.
 - Applied security R&D and secure systems engineering for decentralized environments.
 
 ---
@@ -28,9 +28,9 @@ Our team consists of experts with backgrounds in:
 ## 🚀 Project Description & Goals
 
 Sleeve Vault introduces:
-- **Dual-Key Ownership:** Users generate an ECDSA key (primary) and a WOTS+ key (quantum-safe fallback).
-- **Quantum Fallback Layer:** Ownership is proven via the WOTS+ key to activate post-quantum mode.
-- **Tweakable Hash Functions:** Enables future-proof upgrades and flexible security assumptions.
+- **Dual-Key Ownership:** Users can bring their existing wallets and create a new WOTS+ key (quantum-safe fallback).
+- **Quantum Fallback Layer:** Configurable privileged operations require WOTS+ signatures which remain safe in a post-quantum world.
+- **Efficiency and Security:** Hash computations in EVM are cost effective. Security proofs for hash-based signatures are well bounded.
 
 ### Expected Use Cases
 - Vault systems securing long-term assets with quantum-safe fallback.
@@ -39,7 +39,7 @@ Sleeve Vault introduces:
 
 ### Benefits
 - Strengthens long-term security for EVM-based ecosystems.
-- Adaptable to other smart contract platforms supporting signature validation.
+- Adaptable to other smart contract platforms supporting signature validation (EIP-1271).
 - Advances the broader conversation around quantum safety in decentralized finance.
 
 ---
@@ -48,7 +48,7 @@ Sleeve Vault introduces:
 
 | Month | Milestone                                                        |
 |-------|------------------------------------------------------------------|
-| 0-1   | Protocol specification, cryptographic design, threat modeling    |
+| 1     | Protocol specification, cryptographic design, threat modeling    |
 | 2-3   | WOTS+ Solidity library and Go reference implementation           |
 | 4-5   | Vault smart contract prototypes, fallback logic implementation   |
 | 6     | Formal review, benchmarking, and open-source release             |
@@ -57,8 +57,8 @@ Sleeve Vault introduces:
 
 ## 🧑‍💻 Team Skills
 Our team brings a strong interdisciplinary background including:
-- PhD-level cryptography and post-quantum signature research
-- Advanced smart contract engineering in Solidity and EVM-compatible environments
+- Extensive research in cryptography and post-quantum signature schemes
+- Advanced smart contract engineering in Solidity for EVM environments
 - Protocol design, formal verification, and applied security audits
 - Systems programming (Rust, Go) supporting modular cryptographic development
 
