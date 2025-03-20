@@ -1,8 +1,8 @@
-# Sleeve Vault - Quantum-Resistant Cryptographic Vault Layer
+# qVault - Quantum-Resistant Cryptographic Vault Layer
 
 ## 🧠 Project Abstract
 
-**Sleeve Vault** is a modular cryptographic vault designed to future-proof decentralized assets against quantum threats. Our protocol introduces a **dual-key system** combining traditional ECDSA with **hash-based, quantum-resistant signatures** (WOTS+), ensuring long-term secure asset custody.
+**qVault** is a modular cryptographic vault designed to future-proof decentralized assets against quantum threats. Our protocol introduces a **dual-key system** combining traditional ECDSA with **hash-based, quantum-resistant signatures** (WOTS+), ensuring long-term secure asset custody.
 
 Our mission is to solve one of Web3's most pressing but invisible risks: **the quantum vulnerability of existing wallets and signature schemes**. By introducing a post-quantum fallback mechanism, we provide protocols, DAOs, and asset custodians an opt-in pathway to mitigate the long-term risks of quantum computing without sacrificing near-term usability or composability.
 
@@ -27,7 +27,7 @@ Our team consists of experts with backgrounds in:
 
 ## 🚀 Project Description & Goals
 
-Sleeve Vault introduces:
+qVault Vault introduces:
 - **Dual-Key Ownership:** Users can bring their existing wallets and create a new WOTS+ key (quantum-safe fallback).
 - **Quantum Fallback Layer:** Configurable privileged operations require WOTS+ signatures which remain safe in a post-quantum world.
 - **Efficiency and Security:** Hash computations in EVM are cost effective. Security proofs for hash-based signatures are well bounded.
@@ -66,12 +66,12 @@ Our team brings a strong interdisciplinary background including:
 
 ## 🌐 Links
 - GitHub (coming soon)
-- Project Website: [https://sleeve-web.vercel.app/](https://sleeve-web.vercel.app/)
-- Email: sleevit@proton.me
+- Project Website: [https://qVault-web.vercel.app/](https://qVault.vercel.app/)
+- Email: qvaults@proton.me
 ---
 
 ## ✅ Closing
-Sleeve Vault is designed as a specialized cryptographic vault module — **quantum-resilient, adaptable, and secure by design**. By enabling post-quantum protection today, we help future-proof decentralized assets, protocols, and treasuries for the challenges of tomorrow.
+qVault Vault is designed as a specialized cryptographic vault module — **quantum-resilient, adaptable, and secure by design**. By enabling post-quantum protection today, we help future-proof decentralized assets, protocols, and treasuries for the challenges of tomorrow.
 
 **Join us in advancing the future of secure decentralized custody.**
 
